@@ -1,0 +1,160 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+a {
+  color: currentColor;
+  text-decoration: none;
+}
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+/*HEADER*/
+.header-wrapper {
+  display: flex;
+  align-items: center;
+}
+.header-wrap {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/*HERo*/
+
+.hero {
+  border-radius: 30px;
+
+  background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+    url(../images/hero/hero_@1x_mob.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  margin-bottom: 60px;
+}
+.hero-overlay {
+  padding-top: 395px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-bottom: 20px;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 32px;
+}
+/*BENEFITS*/
+.svg-icon {
+  fill: #fd9222;
+}
+.section--benefits {
+  background: #1e1823;
+}
+.benefits-wrapper {
+  padding-bottom: 20px;
+  padding-top: 20px;
+}
+.benfts-wrap {
+  display: flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-direction: column;
+  gap: 18px;
+}
+.benefits-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.benefits--li {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 22px;
+  padding: 0px 28px 0px 0px;
+}
+.bnfts-svg-div {
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  border-radius: 365px;
+  width: 62px;
+  height: 62px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+  gap: 7px;
+}
+
+/*INGREDIENTS*/
+
+.ingredients-section {
+  padding-top: 60px;
+}
+.ingredients-title-text {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.ingredients-list {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.ingredient-list {
+  padding: 0;
+  margin: 0 auto;
+  max-width: 400px;
+}
+.img-list-ingr {
+}
+.card {
+  text-align: center;
+  border-radius: 15px;
+}
+
+.card img {
+  max-width: 100%;
+  height: auto;
+  margin-bottom: 25px;
+  margin-top: 28px;
+  margin-left: 55px;
+  margin-right: 55px;
+}
+
+.card.orange {
+  background: #fd9222;
+  color: white;
+}
+
+.card.white {
+  background-color: #fff;
+  border: 1px solid #ffa500;
+  color: #000;
+}
+
+.card.dark {
+  background-color: #1a131f;
+  color: white;
+}
