@@ -1,0 +1,62 @@
+h1 {
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  color: #fff;
+}
+h2 {
+  font-weight: 600;
+  font-size: 20px;
+  line-height: 1.2;
+  letter-spacing: -0.03em;
+  text-transform: uppercase;
+  text-align: center;
+  color: #111;
+}
+.accent {
+  color: #fd9222;
+}
+.benefits-text {
+  font-weight: 400;
+  font-size: 14px;
+  letter-spacing: -0.02em;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 16px;
+}
+.benefits--title {
+  font-weight: 600;
+  font-size: 18px;
+  letter-spacing: 0.01em;
+  color: #fff;
+}
+
+.ingredients-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-align: center;
+  color: #111;
+  margin-bottom: 32px;
+}
+.pic-desc {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #fff;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
+.pic-black {
+  font-weight: 600;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.02em;
+  text-transform: uppercase;
+  color: #111;
+  margin-top: 25px;
+  margin-bottom: 28px;
+}
