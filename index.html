@@ -43,13 +43,13 @@
             of pure delight!
           </h1>
           <div class="hero-info">
-            <button>Buy now</button>
-            <button>How it's made</button>
+            <button class="btn-buynow">Buy now</button>
+            <button class="btn-now">How it's made</button>
           </div>
           <div class="scroll-down-btn">
             <a href="#about" class="scroll-btn">
               <span>scroll down</span>
-              <svg width="14" height="8">
+              <svg class="svg-scroll" width="14" height="8">
                 <use href="./images/icons/icons.svg#icon-Vector"></use>
               </svg>
             </a>
@@ -177,40 +177,46 @@
     <!-- HOW IT'S MADE -->
     <section class="section-made">
       <div class="container">
-        <div class="div-made-title">
-          <h2 class="title">How it's <span class="made accent">made?</span></h2>
-        </div>
-        <div class="made-pic">
-          <a class="made-img">
-            <img
-              class="how-img"
-              src="./images/recipe/recipe_@1x_mob.png"
-              alt="how it's made"
-            />
-          </a>
-        </div>
-        <div class="gide-list">
-          <h3 class="title-h3">
-            Try our chocolates today and discover the perfect balance of flavor
-          </h3>
-          <ul class="step-gide">
-            <li class="gide-li">
-              Heat the milk in a saucepan without bringing it to a boil. Add
-              sugar and cocoa powder.
-            </li>
-            <li class="gide-li">
-              Prepare a water bath. Melt the butter on it.
-            </li>
-            <li class="gide-li">
-              Mix the milk mixture and melted butter thoroughly.
-            </li>
-            <li class="gide-li">
-              Heat the mixture over low heat, letting it barely boil.
-            </li>
-            <li class="gide-li">
-              Pour the chocolate into molds and let it cool and harden.
-            </li>
-          </ul>
+        <div class="made--wrapper">
+          <div class="div-made-title-pic">
+            <h2 class="title">
+              How it's <span class="made accent">made?</span>
+            </h2>
+            <a class="made-img">
+              <img
+                class="how-img"
+                src="./images/recipe/recipe_@1x_mob.png"
+                alt="how it's made"
+              />
+            </a>
+          </div>
+          <div class="gide-list">
+            <h3 class="title-h3">
+              Try our chocolates today and discover the perfect balance of
+              flavor
+            </h3>
+            <ul class="step-gide">
+              <li class="gide-li">
+                Heat the milk in a saucepan without bringing it to a boil. Add
+                sugar and cocoa powder.
+              </li>
+              <li class="gide-li">
+                At the same time, prepare a water bath. Melt the butter on it.
+              </li>
+              <li class="gide-li">
+                "Mix" the milk mixture and already liquid butter. Mix thoroughly
+                with a silicone spatula so that the mass becomes uniform and
+                silky.
+              </li>
+              <li class="gide-li">
+                Heat the mixture over low heat, letting it barely boil.
+              </li>
+              <li class="gide-li">
+                Pour the chocolate into special containers (can be replaced with
+                ice molds). Allow to cool and harden.
+              </li>
+            </ul>
+          </div>
         </div>
       </div>
     </section>
@@ -219,46 +225,55 @@
     <section class="section-reviews">
       <div class="container">
         <h2 class="title"><span class="accent">chocolate</span> is loved</h2>
-        <ul class="people-list">
-          <li class="list-li">
+        <div class="review-box">
+          <div class="box">
             <img
               src="./images/reviews/victoria_@1x.png"
               alt="Victoria Dobrzhanska"
               width="80"
               height="80"
+              class="review-img"
             />
             <h3 class="title-h3">Victoria Dobrzhanska</h3>
+
             <p class="review">
               Perfect combination of crispy wafer, covered in a thin layer of
               chocolate.
             </p>
-          </li>
-          <li class="list-li">
+          </div>
+          <div class="box">
             <img
               src="./images/reviews/nazar_@1x.png"
               alt="Nazar Babenko"
               width="80"
               height="80"
+              class="review-img"
             />
+
             <h3 class="title-h3">Nazar Babenko</h3>
+
             <p class="review">
               A delight! Crisp wafer, smooth hazelnut cream, and great
               chocolate.
             </p>
-          </li>
-          <li class="list-li">
+          </div>
+          <div class="box">
             <img
               src="./images/reviews/olena_@1x.png"
               alt="Olena Kampusch"
               width="80"
               height="80"
+              class="review-img"
             />
+
             <h3 class="title-h3">Olena Kampusch</h3>
+
             <p class="review">
               Love the smooth chocolate and creaminess inside. Crunchy wafer.
             </p>
-          </li>
-        </ul>
+          </div>
+        </div>
+
         <div class="btn-send-review">
           <button class="leave-button">Leave a review</button>
         </div>
@@ -269,25 +284,71 @@
     <footer class="footer">
       <div class="container">
         <div class="footer-title">
-          <h2 class="title">
+          <h2 class="title-footer title">
             <span class="accent">Chocolate</span> a delicious cure for a bad day
           </h2>
         </div>
         <div class="footer-contact-us">
           <address class="foter-addrs">
-            <p class="contact">Contact us</p>
-            <ul class="contact-list">
-              <li class="contacts-li">
-                <a class="contacts" href="tel:+380684439426"
-                  >+380 (68) 443-94-26</a
-                >
-              </li>
-              <li class="contacts-li">
-                <a class="contacts" href="mailto:simplychoc@gmail.com"
-                  >simplychoc@gmail.com</a
-                >
-              </li>
-            </ul>
+            <div class="p-contact-list">
+              <p class="contact-address">Contact us</p>
+              <ul class="contact-list">
+                <li class="contacts-li">
+                  <a class="contacts" href="tel:+380684439426"
+                    >+380 (68) 443-94-26</a
+                  >
+                </li>
+                <li class="contacts-li">
+                  <a class="contacts" href="mailto:simplychoc@gmail.com"
+                    >simplychoc@gmail.com</a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="footer--navigation">
+              <nav class="footer--nav">
+                <ul class="footer--nav_list">
+                  <li class="footer--item">
+                    <a href="#to_top-scroll" class="footer--nav_link">How</a>
+                  </li>
+                  <li class="footer--item">
+                    <a href="#about_section" class="footer--nav_link"
+                      >How it's made?</a
+                    >
+                  </li>
+                  <li class="footer--item">
+                    <a href="#catalog_section" class="footer--nav_link"
+                      >Our products</a
+                    >
+                  </li>
+                  <li class="footer--item">
+                    <a href="#sale_section" class="footer--nav_link"
+                      >Top sellers</a
+                    >
+                  </li>
+                  <li class="footer--item">
+                    <a href="#reviews_section" class="footer--nav_link"
+                      >Chocolate is loved</a
+                    >
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <form class="contact_form">
+              <label for="email" class="email_label">
+                <input
+                  id="email"
+                  class="contact_input mail_input"
+                  type="email"
+                  name="email"
+                  placeholder="Your email*"
+                  pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                  maxlength="35"
+                  required=""
+                />
+              </label>
+              <button class="contact_button" type="submit">Subscribe</button>
+            </form>
           </address>
         </div>
       </div>
