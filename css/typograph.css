@@ -58,7 +58,6 @@ body {
   letter-spacing: -0.02em;
   text-align: center;
   color: #111;
-  margin-bottom: 32px;
 }
 .pic-desc {
   font-weight: 600;
@@ -67,8 +66,6 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #fff;
-  margin-top: 25px;
-  margin-bottom: 28px;
 }
 .pic-black {
   font-weight: 600;
@@ -77,8 +74,6 @@ body {
   letter-spacing: -0.02em;
   text-transform: uppercase;
   color: #111;
-  margin-top: 25px;
-  margin-bottom: 28px;
 }
 
 .title-h3 {

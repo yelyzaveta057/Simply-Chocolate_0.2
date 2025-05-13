@@ -135,40 +135,38 @@
             </p>
           </div>
           <div class="img-list-ingr">
-            <ul class="ingredients-list">
-              <li class="card orange">
-                <img
-                  src="./images/ingridients/chocolate/milk-chocolate@1x_mob.png"
-                  class="ingr-pic"
-                  alt="Milk Chocolate"
-                />
-                <p class="pic-desc">Milk chocolate</p>
-              </li>
-              <li class="card white">
-                <img
-                  src="./images/ingridients/milk/milk-@1x_mob.png"
-                  class="ingr-pic"
-                  alt="Milk"
-                />
-                <p class="pic-black">Milk</p>
-              </li>
-              <li class="card dark">
-                <img
-                  src="./images/ingridients/nuts/nuts-@1x_mob.png"
-                  class="ingr-pic"
-                  alt="Nuts"
-                />
-                <p class="pic-desc">Nuts</p>
-              </li>
-              <li class="card white">
-                <img
-                  src="./images/ingridients/beans/beans-@1x_mob.png"
-                  class="ingr-pic"
-                  alt="Semi-Sweet Chocolate"
-                />
-                <p class="pic-black">Semi-sweet chocolate</p>
-              </li>
-            </ul>
+            <div class="card orange">
+              <img
+                src="./images/ingridients/chocolate/milk-chocolate@1x_mob.png"
+                class="ingr-pic"
+                alt="Milk Chocolate"
+              />
+              <p class="pic-desc">Milk chocolate</p>
+            </div>
+            <div class="card white">
+              <img
+                src="./images/ingridients/milk/milk-@1x_mob.png"
+                class="ingr-pic"
+                alt="Milk"
+              />
+              <p class="pic-black">Milk</p>
+            </div>
+            <div class="card dark">
+              <img
+                src="./images/ingridients/nuts/nuts-@1x_mob.png"
+                class="ingr-pic"
+                alt="Nuts"
+              />
+              <p class="pic-desc">Nuts</p>
+            </div>
+            <div class="card white">
+              <img
+                src="./images/ingridients/beans/beans-@1x_mob.png"
+                class="ingr-pic"
+                alt="Semi-Sweet-Chocolate"
+              />
+              <p class="pic-black">Semi-sweet chocolate</p>
+            </div>
           </div>
         </div>
       </div>
@@ -182,12 +180,23 @@
             <h2 class="title">
               How it's <span class="made accent">made?</span>
             </h2>
-            <a class="made-img">
-              <img
-                class="how-img"
-                src="./images/recipe/recipe_@1x_mob.png"
-                alt="how it's made"
-              />
+            <a href="#" class="made-img">
+              <picture class="pic">
+                <source
+                  srcset="/images/recipe/recipe_@1x_desk.png x1, /images/recipe/recipe_@2x_desk.png x2"
+                  media="(min-width: 1280px)"
+                />
+                <source
+                  srcset="/images/recipe/recipe_@1x_tab.png x1, /images/recipe/recipe_@2x_tab.png x2 "
+                  media="(min-width: 768px)"
+                />
+                <img
+                  class="how-img"
+                  src="/images/recipe/recipe_@1x_mob.png"
+                  srcset="/images/recipe/recipe_@2x_mob.png 2x"
+                  alt="How it's made"
+                />
+              </picture>
             </a>
           </div>
           <div class="gide-list">
