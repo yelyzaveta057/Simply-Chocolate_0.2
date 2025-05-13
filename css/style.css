@@ -23,6 +23,17 @@ img {
   height: auto;
 }
 /*HEADER*/
+.header-logo {
+  padding-top: 25px;
+  padding-bottom: 19px;
+}
+.header-mobile-menu-open {
+  background-color: transparent;
+  border: transparent;
+}
+.choc-svg {
+  color: #fd9222;
+}
 .header-wrapper {
   display: flex;
   align-items: center;
@@ -56,6 +67,13 @@ img {
   justify-content: flex-start;
   flex-direction: column;
   gap: 32px;
+}
+.hero-info {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: row;
+  gap: 14px;
 }
 /*BENEFITS*/
 .svg-icon {
@@ -128,8 +146,7 @@ img {
   margin: 0 auto;
   max-width: 400px;
 }
-.img-list-ingr {
-}
+
 .card {
   text-align: center;
   border-radius: 15px;
@@ -356,4 +373,36 @@ img {
   justify-content: flex-start;
   flex-direction: row;
   gap: 8px;
+}
+
+@media only screen and (min-width: 768px) {
+  .hero {
+    border-radius: 30px;
+    width: 768px;
+    height: 890px;
+    background: linear-gradient(rgba(17, 17, 17, 0.4), rgba(17, 17, 17, 0.4)),
+      url(../images/hero/hero_@1x_tab.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    margin-bottom: 40px;
+  }
+  .hero-overlay {
+    padding-top: 671px;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 32px;
+  }
+  .hero-info {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 14px;
+  }
 }
