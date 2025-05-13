@@ -183,17 +183,23 @@
             <a href="#" class="made-img">
               <picture class="pic">
                 <source
-                  srcset="/images/recipe/recipe_@1x_desk.png x1, /images/recipe/recipe_@2x_desk.png x2"
+                  srcset="
+                    ./images/recipe/recipe_@1x_desk.png 1x,
+                    ./images/recipe/recipe_@2x_desk.png 2x
+                  "
                   media="(min-width: 1280px)"
                 />
                 <source
-                  srcset="/images/recipe/recipe_@1x_tab.png x1, /images/recipe/recipe_@2x_tab.png x2 "
+                  srcset="
+                    ./images/recipe/recipe_@1x_tab.png 1x,
+                    ./images/recipe/recipe_@2x_tab.png 2x
+                  "
                   media="(min-width: 768px)"
                 />
                 <img
                   class="how-img"
-                  src="/images/recipe/recipe_@1x_mob.png"
-                  srcset="/images/recipe/recipe_@2x_mob.png 2x"
+                  src="./images/recipe/recipe_@1x_mob.png "
+                  srcset="./images/recipe/recipe_@2x_mob.png 2x"
                   alt="How it's made"
                 />
               </picture>
