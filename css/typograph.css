@@ -5,6 +5,21 @@
   letter-spacing: -0.03em;
   color: #fff;
 }
+.header-logo {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em;
+  color: #111;
+}
+.accent-simply {
+  font-style: italic;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.28571;
+  letter-spacing: -0.03em;
+  color: #111;
+}
 h2 {
   font-weight: 600;
   font-size: 20px;
@@ -155,4 +170,9 @@ address {
   font-size: 14px;
   text-align: center;
   color: #fff;
+}
+
+@media only screen and (min-width: 768px) {
+  .titel-hero {
+  }
 }
