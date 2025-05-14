@@ -31,6 +31,46 @@ img {
   background-color: transparent;
   border: transparent;
 }
+.header-logo {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  position: relative;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 14px;
+  color: #111;
+}
+
+.logo-icon-wrapper {
+  position: relative;
+  width: 21px;
+  height: 22px;
+}
+
+.icon-choc-2,
+.icon-choc {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 21px;
+  height: 22px;
+}
+
+.icon-choc-2 {
+  fill: #fcf1e0; /* Основна заливка */
+}
+.ingredients-text {
+  padding-top: 24px;
+  padding-bottom: 32px;
+}
+
+.icon-choc {
+  stroke-width: 1.8px;
+  stroke: #fd9222;
+  fill: none;
+}
+
 .choc-svg {
   color: #fd9222;
 }
@@ -305,7 +345,6 @@ img {
   justify-content: flex-start;
   flex-direction: column;
   gap: 14px;
-  padding-bottom: 64px;
 }
 
 .footer--nav_list {
@@ -372,6 +411,56 @@ img {
   flex-direction: row;
   gap: 8px;
 }
+.divider {
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  width: 335px;
+  height: 0px;
+  margin: 30px 0;
+}
+.img-list {
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  gap: 20px;
+}
+.btns-scroll {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-direction: column;
+  gap: 32px;
+}
+.scroll-down-wrapper {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.scroll-down-text {
+  color: #fff;
+  font-size: 12px;
+  text-transform: lowercase;
+  letter-spacing: 0.5px;
+}
+
+.scroll-down-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 28px;
+  height: 28px;
+  background-color: #fff;
+  border-radius: 50%;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+}
+
+.svg-scroll {
+  width: 10px;
+  height: 6px;
+  fill: #fd9222;
+}
 
 @media only screen and (min-width: 768px) {
   .hero {
@@ -387,6 +476,9 @@ img {
   .benefits-wrapper {
     padding: 50px 32px;
   }
+  .ingredients-text {
+    padding-bottom: 0;
+  }
   .hero-overlay {
     padding-top: 671px;
     padding-left: 72px;
@@ -397,6 +489,14 @@ img {
     justify-content: flex-start;
     flex-direction: column;
     gap: 32px;
+  }
+  .svg-scroll {
+    width: 14px;
+    height: 8px;
+  }
+  .scroll-down-btn {
+    width: 38px;
+    height: 38px;
   }
   .benefits-list {
     display: grid;
@@ -431,8 +531,67 @@ img {
   .ingredients-title-text {
     width: 486px;
   }
-  .ingredients-text {
-    padding-top: 28px;
+
+  .gide-list {
+    gap: 28px;
+    padding: 32px 32px;
+  }
+  .made--wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 50px;
+  }
+  .gide-list {
+    max-width: 550px;
+  }
+  .review-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    gap: 16px;
+  }
+
+  .divider {
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    width: 704px;
+    height: 0px;
+    margin-top: 50px;
+    margin-bottom: 24px;
+  }
+  .footer--nav_list li:nth-child(3),
+  .footer--nav_list li:nth-child(4) {
+    display: none;
+  }
+  .footer--nav_list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 16px;
+  }
+  .footer-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+  }
+  .img-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 20px;
+  }
+  .btns-scroll {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 153px;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -445,5 +604,85 @@ img {
     background-size: cover;
     background-position: center;
     margin-bottom: 40px;
+  }
+  .img-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .titile-contacts {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    flex-wrap: wrap; /* Для адаптиву */
+    gap: 20px;
+    padding-bottom: 20px;
+  }
+
+  .footer-title {
+    max-width: 400px;
+  }
+  .p-contact-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 14px;
+  }
+  .footer-contact-us {
+    text-align: right;
+  }
+  .contact-address {
+    margin-top: 50px;
+  }
+  .footer-nav {
+    gap: 590px;
+  }
+  .contact-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .divider {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.2);
+    margin: 20px 0;
+  }
+  .gide-list {
+    height: 325px;
+  }
+  .step-gide {
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    flex-direction: column;
+    gap: 28px;
+  }
+  .card {
+    width: 270px;
+    height: 270px;
+  }
+  .benefits-list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: row;
+    gap: 70px;
+  }
+  .btns-scroll {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    flex-direction: row;
+    gap: 585px;
+  }
+  .titel-hero {
+    width: 484px;
   }
 }

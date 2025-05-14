@@ -15,12 +15,17 @@
       <div class="container">
         <div class="header-wrapper">
           <div class="header-wrap">
-            <a class="header-logo"
-              ><span class="accent-simply">SIMPLY</span> CHOCOLATE</a
-            >
-            <svg width="21" height="22">
-              <use href="./images/icons/icons.svg#icon-choc-2"></use>
-            </svg>
+           <a class="header-logo" href="#">
+  <span class="accent-simply">SIMPLY</span> CHOCOLATE
+  <span class="logo-icon-wrapper">
+    <svg width="21" height="22" class="icon-choc-2">
+      <use href="./images/icons/icons.svg#icon-choc-2"></use>
+    </svg>
+    <svg width="21" height="22" class="icon-choc">
+      <use href="./images/icons/icons.svg#icon-choc"></use>
+    </svg>
+  </span>
+</a>
             <button
               class="header-mobile-menu-open js-open-menu"
               aria-label="Open menu"
@@ -31,7 +36,10 @@
             </button>
           </div>
         </div>
+        
       </div>
+    
+
     </header>
 
     <!-- HERO -->
@@ -42,17 +50,19 @@
             Treat yourself or a loved one to our finest ingredients for a moment
             of pure delight!
           </h1>
+          <div class="btns-scroll">
           <div class="hero-info">
             <button class="btn-buynow">Buy now</button>
             <button class="btn-now">How it's made</button>
           </div>
-          <div class="scroll-down-btn">
-            <a href="#about" class="scroll-btn">
-              <span>scroll down</span>
-              <svg class="svg-scroll" width="14" height="8">
-                <use href="./images/icons/icons.svg#icon-Vector"></use>
-              </svg>
-            </a>
+        <div class="scroll-down-wrapper">
+  <span class="scroll-down-text">scroll down</span>
+  <a href="#about" class="scroll-down-btn">
+    <svg class="svg-scroll" width="24" height="24">
+      <use href="./images/icons/icons.svg#icon-Vector"></use>
+    </svg>
+  </a>
+</div>
           </div>
         </div>
       </div>
@@ -175,11 +185,13 @@
     <!-- HOW IT'S MADE -->
     <section class="section-made">
       <div class="container">
+   
         <div class="made--wrapper">
           <div class="div-made-title-pic">
             <h2 class="title">
               How it's <span class="made accent">made?</span>
             </h2>
+                 <div class="img-list">
             <a href="#" class="made-img">
               <picture class="pic">
                 <source
@@ -204,7 +216,7 @@
                 />
               </picture>
             </a>
-          </div>
+        
           <div class="gide-list">
             <h3 class="title-h3">
               Try our chocolates today and discover the perfect balance of
@@ -231,6 +243,8 @@
                 ice molds). Allow to cool and harden.
               </li>
             </ul>
+          </div>
+        </div>
           </div>
         </div>
       </div>
@@ -298,6 +312,7 @@
     <!-- FOOTER -->
     <footer class="footer">
       <div class="container">
+        <div class="titile-contacts">
         <div class="footer-title">
           <h2 class="title-footer title">
             <span class="accent">Chocolate</span> a delicious cure for a bad day
@@ -320,50 +335,54 @@
                 </li>
               </ul>
             </div>
-            <div class="footer--navigation">
-              <nav class="footer--nav">
-                <ul class="footer--nav_list">
-                  <li class="footer--item">
-                    <a href="#to_top-scroll" class="footer--nav_link">How</a>
-                  </li>
-                  <li class="footer--item">
-                    <a href="#about_section" class="footer--nav_link"
-                      >How it's made?</a
-                    >
-                  </li>
-                  <li class="footer--item">
-                    <a href="#catalog_section" class="footer--nav_link"
-                      >Our products</a
-                    >
-                  </li>
-                  <li class="footer--item">
-                    <a href="#sale_section" class="footer--nav_link"
-                      >Top sellers</a
-                    >
-                  </li>
-                  <li class="footer--item">
-                    <a href="#reviews_section" class="footer--nav_link"
-                      >Chocolate is loved</a
-                    >
-                  </li>
-                </ul>
-              </nav>
+             </div>
+            <div class="divider"></div>
+            <div class="footer-nav">
+              <div class="footer--navigation">
+                <nav class="footer--nav">
+                  <ul class="footer--nav_list">
+                    <li class="footer--item">
+                      <a href="#to_top-scroll" class="footer--nav_link">How</a>
+                    </li>
+                    <li class="footer--item">
+                      <a href="#about_section" class="footer--nav_link"
+                        >How it's made?</a
+                      >
+                    </li>
+                    <li class="footer--item">
+                      <a href="#catalog_section" class="footer--nav_link"
+                        >Our products</a
+                      >
+                    </li>
+                    <li class="footer--item">
+                      <a href="#sale_section" class="footer--nav_link"
+                        >Top sellers</a
+                      >
+                    </li>
+                    <li class="footer--item">
+                      <a href="#reviews_section" class="footer--nav_link"
+                        >Chocolate is loved</a
+                      >
+                    </li>
+                  </ul>
+                </nav>
+              </div>
+              <form class="contact_form">
+                <label for="email" class="email_label">
+                  <input
+                    id="email"
+                    class="contact_input mail_input"
+                    type="email"
+                    name="email"
+                    placeholder="Enter your email"
+                    pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
+                    maxlength="35"
+                    required=""
+                  />
+                </label>
+                <button class="contact_button" type="submit">Subscribe</button>
+              </form>
             </div>
-            <form class="contact_form">
-              <label for="email" class="email_label">
-                <input
-                  id="email"
-                  class="contact_input mail_input"
-                  type="email"
-                  name="email"
-                  placeholder="Enter your email"
-                  pattern="^\w+(\.\w+)?@[a-zA-Z_]+?\.[a-zA-Z]{2,3}$"
-                  maxlength="35"
-                  required=""
-                />
-              </label>
-              <button class="contact_button" type="submit">Subscribe</button>
-            </form>
           </address>
         </div>
       </div>
